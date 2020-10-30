@@ -35,3 +35,7 @@ def vote():
         print("the proposal passes by simple majority")
     else:
         print("the proposal does not pass")
+        
+print(min_enclosing_rectangle(9,4,2))
+print(vote_percentage("yes no yes yes no yes no yes yes no null null"))
+print(vote("yes no no null yes yes no null))

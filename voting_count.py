@@ -10,15 +10,18 @@ def min_enclosing_rectangle(radius, x, y) :
         width=x-radius
         length=y-radius
         return (width, length)
-
+    
 def vote_percentage (results):
     '''(string)->number
         a function that counts the amount of no and yes in a string and returns the percentage of yes'''
-    results=results.lower()
-    yes=results.count("yes")
-    no=results.count("no")
-    total=yes+no
-    return (yes/(total))
+    results = results.lower()
+    yes = results.count("yes")
+    no = results.count("no")
+    total = yes+no
+    if total == 0:
+        return 0
+    else:
+        return (yes/(total))
 
 def vote():
     '''none->none

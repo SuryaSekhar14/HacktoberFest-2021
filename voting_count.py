@@ -36,6 +36,7 @@ def vote():
     else:
         print("the proposal does not pass")
 
-(vote())       # ignores anything that isnt yes or no
-print(vote_percentage("yes n0 yebs  no ues yes yes"))
-print(min_enclosing_rectangle(5,10,10))
+if __name__ == "__main__":
+    (vote())       # ignores anything that isnt yes or no
+    print(vote_percentage("yes n0 yebs  no ues yes yes"))
+    print(min_enclosing_rectangle(5,10,10))

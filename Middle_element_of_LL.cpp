@@ -1,6 +1,3 @@
-/* Name : Rithik Dutt
-   College : Dayananda Sagar College of Engineering */
-
 #include<bits/stdc++.h>
 
 using namespace std;

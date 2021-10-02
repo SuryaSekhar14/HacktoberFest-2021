@@ -9,4 +9,4 @@ A repository for Hacktober Fest contributions. Everyone is welcome. Fork away!
 Commit any Projects or Scripts you have in this Repository. <br>
 If it is useful, I will merge the Pull Request. 
 
-###NOTE: Please add a README.md along with your project folder
+### NOTE: Please add a README.md along with your project folder

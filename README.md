@@ -6,5 +6,5 @@ A repository for Hacktober Fest contributions. Everyone is welcome. Fork away!
 
 ## Quality over Quantity!
 
-Commit any Projects or Scripts you have in this Repository. 
+Commit any Projects or Scripts you have in this Repository. <br>
 If it is useful, I will merge the Pull Request. 

@@ -32,7 +32,7 @@ class LinkedList:
 			count += 1
 			itr = itr.next
 
-		return count
+		print(count)
 
 	def insert_at_beginning(self, data):
 
@@ -97,21 +97,48 @@ class LinkedList:
 			self.insert_at_end(data)
 
 if __name__ == '__main__':
-
+	
 	ll = LinkedList()
+
 	
-	ll.insert_values([1, 2, 3, 4, 5])
-	ll.print()
+	print('''
+		a -> insert values
+		b -> insert a value at the beginning
+		c -> insert a value at the end 
+		d -> insert a value at any index
+		e -> remove a value at any index
+		f -> get the length of the linked list
+		g -> exit from the program
+		'''
+		)
 
-	ll.insert_at_beginning(0)
-	ll.print()
+	while True:
 
-	ll.insert_at_end(6)
-	ll.print()
+		ch = input()
 
-	ll.insert_at(3, 2.5)
-	ll.print()
+		if (ch == "a"):
+			ll.insert_values(list(input().split()))
+			ll.print()
+			
+		elif (ch == "b"):
+			ll.insert_at_beginning(input())
+			ll.print()
+			
+		elif (ch == "c"):
+			ll.insert_at_end(input())
+			ll.print()
+			
+		elif (ch == "d"):
+			ll.insert_at(int(input()), input())
+			ll.print()
+			
+		elif (ch == "e"):
+			ll.remove_at(int(input()))
+			ll.print()
+			
+		elif (ch == "f"):
+			ll.get_length()
+			
+		elif(ch == "g"):
+			break
 
-	ll.remove_at(3)
-	ll.print()
-	

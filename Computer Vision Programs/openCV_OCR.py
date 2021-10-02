@@ -5,8 +5,18 @@ import pytesseract
 # Mention the installed location of Tesseract-OCR in your system
 pytesseract.pytesseract.tesseract_cmd = 'System_path_to_tesseract.exe'
 
-# Read image from which text needs to be extracted
-img = cv2.imread("sample.jpg")
+# Read video and then detect images
+img = cv2.VideoCapture(0)
+
+while(img.isOpened()):
+    ret, frame = img.read()
+    if ret == False:
+        break
+    cv2.imwrite('capture'+str(i)+'.jpg',frame)
+    i+=1
+ 
+img.release()
+cv2.destroyAllWindows()
 
 # Preprocessing the image starts
 
